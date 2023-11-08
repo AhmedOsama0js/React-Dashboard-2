@@ -1,0 +1,17 @@
+.main-container{
+  display:  flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-container .sidebar{
+  /* width:80px; */
+  height: 100vh;
+}
+
+.main-container .dashboard-container{
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+}

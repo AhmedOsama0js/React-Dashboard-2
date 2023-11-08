@@ -1,0 +1,28 @@
+.cardContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  padding: 5px;
+  height: 100%;
+}
+.infoData{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size:13px;
+}
+.red{
+  color: var(--red);
+}
+.green{
+  color: var(--green);
+}
+
+.amount{
+  font-weight: bold;
+  font-size: 20px;
+}
+

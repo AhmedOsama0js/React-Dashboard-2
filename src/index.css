@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@300;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --transparent-black: rgba(0, 0, 0, 0.29);
+  --black: #111111;
+  --grey: rgba(225, 225, 225, 0.59);
+  --orange: #ff805d;
+  --green: rgb(54, 234, 54);
+  --white : #ffffff;
+  --blue : #5dc9ff;
+  --red:#ff5d5d;
+  --orange-gradient: linear-gradient(
+    268.36deg,
+    rgba(255, 670, 70, 0.99) 3.47%,
+    rgba(255, 114, 70, 0.99) 60.18%
+  );
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 2px;
+  background-color: var(--black);
+}
+::-webkit-scrollbar-thumb{
+  width: 0;
+  height: 0;
+  background-color: var(--orange);
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+
+}
+

@@ -1,0 +1,12 @@
+.Geo-container{
+  margin: 0 auto;
+  height: 75vh;
+  width: 90%;
+  color: black !important;
+}
+
+@media(max-width:786px){
+  .Geo-container{
+  width: 100%;
+  }
+}

@@ -1,0 +1,156 @@
+.container{
+
+  width: 97%;
+  margin: 0 auto;
+  display: grid;
+  height: calc(100vh - 15vh);
+  gap :10px;
+  grid-template-columns: 72% 25%;
+  height: 80vh;
+  overflow: hidden;
+}
+@media(max-width:997px){
+  .container{
+    width: 95%;
+    margin: 0 5px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.left{
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 25% 77%;
+}
+@media(max-width:997px){
+  .left{
+  display: flex;
+  flex-direction: column;
+  }
+}
+.up{
+  padding: 10px;
+  background-color: rgba(0,0,0,0.50);
+  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+.HeadOption{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.select{
+  padding: 5px;
+  background-color: var(--orange);
+  border-radius: 10px;
+  border: none;
+}
+.option{
+  border-radius: 5px;
+}
+.data{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  overflow-y: scroll;
+}
+.down{
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.50);
+  border-radius: 15px;
+  height:86%;
+  overflow-y: hidden;
+}
+@media(max-width:997px){
+  .down{
+    overflow-y: scroll;
+  }
+}
+.right{
+  /* height: 80vh; */
+  padding: 10px;
+  height: 93%;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.50);
+  margin: 0;
+}
+.rightHeader{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.overview{
+  width: 100%;
+  background: linear-gradient(to left,#00000000,#eeeeee33,#00000000);
+  overflow: hidden;
+  /* border-radius: 15px; */
+  border-bottom: 1px solid rgba(243, 243, 243, 0.322);
+  border-top: 1px solid rgba(243, 243, 243, 0.281);
+  margin-top: 10px;
+
+}
+.linChart{
+  width: 100%;
+  height: auto;
+}
+
+.rightAmount{
+  /* margin-top: 10px; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 12px;
+  border-top: 1px solid rgba(243, 243, 243, 0.301);
+  border-bottom: 1px solid rgba(243, 243, 243, 0.315);
+  /* background-color: rgba(128, 128, 128, 0.123); */
+  background: linear-gradient(to left,#00000000,#eeeeee33,#00000000);
+}
+.rightTable{
+    margin-top: 10px;
+  height: 220px;
+  overflow-y: scroll;
+  /* background-color: red; */
+}
+
+.itemTable{
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemInfo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.green{
+  color: var(--green);
+}
+
+.orderChart{
+  height: 150px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
