@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Calender from './pages/Calender/Calender';
@@ -10,22 +10,22 @@ import HeaderDashboard from './components/HeaderDashboard/HeaderDashboard';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='main-container'>
-        <div className='sidebar'>
-          <Sidebar/>
+    <HashRouter >
+      <div className="main-container">
+        <div className="sidebar">
+          <Sidebar />
         </div>
-        <div className='dashboard-container'>
-          <HeaderDashboard/>
+        <div className="dashboard-container">
+          <HeaderDashboard />
           <Routes>
-          <Route path="" element={<Dashboard />} />
-          <Route path = "/calender" element= {<Calender/>}/>
-          <Route path = "/map" element= {<Map/>}/>
-          <Route path = "/table" element= {<Table/>}/>
-      </Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/calender" element={<Calender />} />
+            <Route path="/map" element={<Map />} />
+            <Route path="/table" element={<Table />} />
+          </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
